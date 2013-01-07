@@ -6,6 +6,7 @@
 
 # Directories to ignore
 /offlineDocumentation
+/examples
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
@@ -23,4 +24,4 @@
 #Also all those pesky swp files
 *.swp
 *.swo
-
+smtp.txt

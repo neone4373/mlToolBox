@@ -91,13 +91,13 @@ def plotItOut(p,tr):
       aa = np.delete(pts, drop, axis=0)  
       #print "i",i,'q',q,"qq",qq, "drop row?",int(q[-1]) != i, "rows in aa", aa.shape[0]; 
       qq += 1
-    scatterPT.append(mat.scatter(aa[:,0], aa[:,1], c=color, s=75, **props))
+    scatterPT.append(mat.scatter(aa[:,0], aa[:,1], c=color, s=75, marker='o', **props))
   mat.legend(scatterPT,gps)
   mat.show(scatterPT)    
-     
+  mat.close()
 
-points = randPoints(3,2,[2,2],[2,2])
-tree = np.vstack((randTree(10, 5,2,[0,2],[.1,2]), randTree(10,17,2,[2,2],[2,0.1])))
+points = randPoints(3,2,[2,2],[5,5])
+tree = np.vstack((randTree(100, 5,2,[15,8],[5,5]), randTree(100,17,2,[8,10],[5,5])))
 
 #print tree[:,:tree.shape[1]-1],"\n";
 #print points[:,:points.shape[1]-1],"\n"
