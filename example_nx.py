@@ -1,4 +1,10 @@
-import networkx 
+import networkx, datetime
+
+
+"""
+This is some musing from the NetworkX Tutorial
+  http://mlg.ucd.ie/files/summer/tutorial.pdf
+"""
 
 
 #Creating a graph
@@ -54,9 +60,9 @@ g.add_edge("mark@yahoo.ie", "maria@gmail.com", weight=3)
 estrong = [(u,v) for (u,v,d) in g.edges(data=True) if d["weight"] > 3]
 print estrong
 
-print g.degree("conor@deri.org", weighted=False)
+print g.degree("conor@deri.org", weight=None)
 
-print g.degree("conor@deri.org", weighted=True)
+print g.degree("conor@deri.org", weight=True)
 
 
 #Attribute graphs
