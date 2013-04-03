@@ -7,6 +7,9 @@
 # Directories to ignore
 /offlineDocumentation
 /examples
+/settlers
+/networkData
+/build
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
@@ -25,3 +28,6 @@
 *.swp
 *.swo
 smtp.txt
+#not ready for primetime
+for.py
+
